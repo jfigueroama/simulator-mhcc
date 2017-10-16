@@ -2,6 +2,7 @@ import unittest
 from datetime import datetime, time
 import simulators
 from simulators import meter_new_context, simulate_linear_meter, update_meter_context
+import utils
 
 
 class TestSimulators(unittest.TestCase):

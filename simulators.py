@@ -2,24 +2,6 @@ from pyrsistent import m, pmap, v, pvector
 from datetime import datetime, time
 import math
 
-"""
-
-datetime.datetime.now()
-.hour
-
-
-"""
-
-
-
-"""
-context for simulate_consume
-value, rnd (random), dt (date)
-
-"""
-
-# 
-
 def simulate_meter_moc(context):
     return context.set('value', context['value'] + 1)
 
