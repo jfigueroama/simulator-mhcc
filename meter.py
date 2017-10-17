@@ -18,6 +18,8 @@ def main(seconds):
         ch = conn.channel()
         ch.queue_declare(queue=QUEUE)
         context = meter_new_context()
+        context = context.set('value', random.randint(context['min_value'],
+                                                      context['max_value']))
 
         while True:
             time.sleep(seconds)
