@@ -136,5 +136,7 @@ def simulate_pv(spvfn, ctx):
         
         if (cvalue >= 0):
             return ctx.set('value', cvalue)
+        else:
+            return ctx.set('value', 0)
         
     return ctx
